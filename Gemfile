@@ -7,6 +7,18 @@ gem 'rails', '3.0.0.rc'
 
 gem 'mysql'
 
+gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
+
+gem 'chronic'
+gem 'ri_cal'
+gem 'runt'
+gem 'formtastic'
+
+group :test do
+  gem "shoulda"
+  gem "rspec-rails", "2.0.0.beta.12"
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
