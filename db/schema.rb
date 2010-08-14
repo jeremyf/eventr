@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100814010529) do
+ActiveRecord::Schema.define(:version => 20100814013951) do
+
+  create_table "locations", :force => true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "locations", ["name"], :name => "index_locations_on_name"
 
   create_table "users", :force => true do |t|
     t.string   "login"

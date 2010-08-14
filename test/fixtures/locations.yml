@@ -1,0 +1,10 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: Hello
+  url: http://hello.world.com
+
+two:
+  name: Good-Bye
+  url: http://goodbye.world.com
+
