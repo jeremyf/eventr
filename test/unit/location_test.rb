@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class LocationTest < ActiveSupport::TestCase
-  # Replace this with your real tests.
-  test "the truth" do
-    assert true
-  end
+  should validate_uniqueness_of :name
+  should validate_presence_of :name
+  should have_db_column :name
+  should have_db_column :url
 end
