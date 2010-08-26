@@ -5,4 +5,6 @@ class CategoryTest < ActiveSupport::TestCase
   should have_db_column :name
   should have_db_column :parent_id
   should have_db_column :presentation_sequence
+  should have_many :category_events
+  should have_many :events
 end
