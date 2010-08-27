@@ -1,8 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Eventr</title>
-  <%= stylesheet_link_tag :all %>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/iphone.png">
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <%= stylesheet_link_tag 'style' %>
+  <%= stylesheet_link_tag 'mobile', :media => 'handheld' %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
