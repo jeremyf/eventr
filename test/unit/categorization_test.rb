@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class CategoryEventTest < ActiveSupport::TestCase
+class CategorizationTest < ActiveSupport::TestCase
   should have_db_column :category_id
   should have_db_column :event_id
   should validate_presence_of :category_id
