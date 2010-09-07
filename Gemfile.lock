@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/mislav/will_paginate.git
+  revision: 36159385c8a5837fc63fe901ebe0a88205b5ce8d
+  branch: rails3
+  specs:
+    will_paginate (3.0.pre2)
+
+GIT
   remote: git://github.com/odorcicd/authlogic.git
   revision: a087ad0cba3c165ba22fcf176c28b6f7517931e8
   branch: rails3
@@ -133,3 +140,4 @@ DEPENDENCIES
   rspec-rails (= 2.0.0.beta.12)
   runt
   shoulda
+  will_paginate!

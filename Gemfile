@@ -4,6 +4,7 @@ gem 'rails', '3.0.0'
 gem 'capistrano', '2.5.19'
 gem 'mysql', '2.8.1'
 
+gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'
 gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 
 gem 'chronic'
