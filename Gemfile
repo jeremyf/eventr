@@ -1,11 +1,8 @@
 source 'http://rubygems.org'
 gem 'bundler', '1.0.0'
 gem 'rails', '3.0.0'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
-
-gem 'mysql'
+gem 'capistrano', '2.5.19'
+gem 'mysql', '2.8.1'
 
 gem "authlogic", :git => "git://github.com/odorcicd/authlogic.git", :branch => "rails3"
 
