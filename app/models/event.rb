@@ -3,5 +3,5 @@ class Event < ActiveRecord::Base
   validates_presence_of :name
   has_many :categorizations, :dependent => :destroy
   has_many :categories, :through => :categorizations
-  validates_presence_of :start_time
+  validates_presence_of :start_at
 end
