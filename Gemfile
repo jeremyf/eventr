@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
-gem 'bundler', '1.0.0'
-gem 'rails', '3.0.0'
+gem 'bundler', '1.0.10'
+gem 'rails', '3.0.7'
 gem 'capistrano', '2.5.19'
 gem 'mysql', '2.8.1'
 
