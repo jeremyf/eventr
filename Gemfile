@@ -1,21 +1,20 @@
 source 'http://rubygems.org'
 gem 'bundler', '1.0.10'
-gem 'rails', '3.0.7'
-gem 'capistrano', '2.5.19'
-gem 'mysql', '2.8.1'
+gem 'rails'
+gem 'capistrano'
+gem 'mysql'
 
-gem 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :branch => 'rails3'
 gem 'devise'
-gem 'cancan'
 
-gem 'chronic'
-gem 'ri_cal'
-gem 'runt'
-gem 'formtastic'
+gem 'ice_cube'
+
+group :test, :development do
+  gem 'ruby-debug'
+end
 
 group :test do
   gem "shoulda"
-  gem "rspec-rails", "2.0.0.beta.12"
+  gem "rspec-rails"
 end
 
 # Use unicorn as the web server
