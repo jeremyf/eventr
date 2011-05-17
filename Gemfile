@@ -7,7 +7,6 @@ gem 'mysql'
 gem 'devise'
 
 gem 'ice_cube'
-gem 'schedule_atts'
 
 group :test, :development do
   gem 'ruby-debug'
