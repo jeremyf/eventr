@@ -7,4 +7,6 @@ class EventTest < ActiveSupport::TestCase
   should 'respond to .schedule' do
     assert_respond_to Event.new, :schedule
   end
+
+  should have_many :occurrences
 end
