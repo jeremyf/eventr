@@ -1,9 +1,7 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  login: login-1
   email: bob@test.com
 
 two:
-  login: login-2
   email: henry@test.com
