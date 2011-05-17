@@ -9,4 +9,11 @@ class EventTest < ActiveSupport::TestCase
   end
 
   should have_many :occurrences
+
+  should 'create one occurrence for a single event' do
+    now = Time.now
+    assert_difference 'Occurrence.count' do
+      Event.create!(:name => 'My name', :schedule_attributes => {:repeat => '0', :date => now.to_s, :duration => 60*60 })
+    end
+  end
 end
