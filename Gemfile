@@ -7,13 +7,14 @@ gem 'mysql'
 gem 'devise'
 
 gem 'ice_cube'
-
+gem 'schedule_atts', :git => 'git@github.com:jeremyf/Schedule-Attributes.git', :ref => 'f80675dd8f1ce1197820f2bdd0191884a3af28bc'
 group :test, :development do
   gem 'ruby-debug'
 end
 
 group :test do
   gem "shoulda"
+  gem "rspec"
   gem "rspec-rails"
 end
 
