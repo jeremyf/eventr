@@ -16,6 +16,7 @@ group :test do
   gem "shoulda"
   gem "rspec"
   gem "rspec-rails"
+  gem 'accept_values_for'
 end
 
 # Use unicorn as the web server
