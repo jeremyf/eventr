@@ -8,7 +8,7 @@ class Event < ActiveRecord::Base
   before_create :generate_occurrences
   protected
   def generate_occurrences
-    schedule.occurrences(:all).each do |occurrence|
+    schedule.all_occurrences.each do |occurrence|
       occurrences.build(:start_at => occurrence, :end_at => occurrence + schedule.duration)
     end
   end
