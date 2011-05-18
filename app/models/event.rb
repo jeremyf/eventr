@@ -9,7 +9,7 @@ class Event < ActiveRecord::Base
   protected
   def generate_occurrences
     schedule.all_occurrences.each do |occurrence|
-      occurrences.build(:start_at => occurrence, :end_at => occurrence + schedule.duration)
+      occurrences.build(:start_at => occurrence, :duration => schedule.duration)
     end
   end
 end

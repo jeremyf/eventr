@@ -5,6 +5,12 @@ describe Event do
   it { should_not accept_values_for(:name, '', nil)}
 
   describe '#create' do
+
+    it 'can create occurrence(s) without end time' do
+      subject.schedule_attributes = {:repeat => '0', :date => Time.now.to_s }
+      lambda {subject.save!}.should change(Occurrence, :count).by(1)
+    end
+
     it 'also creates one occurrence for a non-repeating event' do
       subject.schedule_attributes = {:repeat => '0', :date => Time.now.to_s, :duration => 60*60 }
       lambda {subject.save!}.should change(Occurrence, :count).by(1)
